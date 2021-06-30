@@ -1,1 +1,1 @@
-web: voila —-port=$PORT --no-browser
+web: voila —-port=$PORT --no-browser --enable_nbextensions=True analysis20210630.ipynb
