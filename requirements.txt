@@ -1,9 +1,8 @@
 pandas
 ipywidgets
 ipython
-os
 ipywidgets
 plotly.express
-types
 scikit_learn
 voila
+numpy
