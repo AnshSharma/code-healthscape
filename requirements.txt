@@ -1,8 +1,0 @@
-pandas
-ipywidgets
-ipython
-ipywidgets
-plotly.express
-scikit_learn
-voila
-numpy
