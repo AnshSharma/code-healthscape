@@ -397,16 +397,26 @@ elif nav == 'Add a project':
 hide_menu_style = """
         <style>
         #MainMenu {visibility: hidden;}
-        * {font-family: "Balto";}
-        h1, h2, h3, h4, h5, h6 {font-family: "Balto";}
+        * {font-family: "Libre Franklin";}
+        h1, h2, h3, h4, h5, h6 {font-family: "Libre Franklin";}
         /* df cells header row face */
-      .css-sc0g0 {font-family: "Balto";}
+      .css-sc0g0 {font-family: "Libre Franklin";}
         /* df cells font face */
-        .css-1l40rdr {font-family: "Balto";}
-        .st-af {font-size: 0.9rem;}
+        .css-1l40rdr {font-family: "Libre Franklin";}
+        .st-af {font-size: 0.8rem;}
+        p {font-size: 0.9rem;}
         footer {visibility: hidden;}
         footer:after {content:'Developed with <3 by Ansh Sharma'; visibility: visible; display: block; position: relative; padding: 5px; top: 2px;}
         th {text-align:left;}
         </style>
         """
+
+import_font = """
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Roboto:wght@300&display=swap');
+        </style>  
+        """
+
 st.markdown(hide_menu_style, unsafe_allow_html=True)
+
+st.markdown(import_font, unsafe_allow_html= True)
