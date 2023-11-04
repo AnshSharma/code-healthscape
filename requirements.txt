@@ -9,3 +9,4 @@ ipywidgets
 ipython
 matplotlib
 plotly
+scikit_learn
