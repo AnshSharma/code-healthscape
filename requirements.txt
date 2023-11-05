@@ -1,6 +1,6 @@
 streamlit
 pandas
-numpy
+numpy==1.21
 spacy
 json5==0.9.5
 en-core-sci-md @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.4.0/en_core_sci_md-0.4.0.tar.gz
