@@ -254,7 +254,9 @@ elif nav == 'Add a project':
 
     st.title('Add a new project')
 
-    uploaded_file = st.file_uploader("Upload your new project data with style", type=['csv'])
+    uploaded_file = st.file_uploader("Upload your new project data with style", type=['csv'], disabled=True)
+
+    st.write("This feature is functional but has been disabled due to security reasons.")
 
     @st.cache
     def load_data(nrows):
@@ -373,7 +375,7 @@ elif nav == 'Add a project':
         json_replaced = data.replace({"Department": json_dict})
         st.write(json_replaced)
 
-    if st.button('Render and append to Master'):
+    if st.button('Render and append to Master', disabled=True):
         st.info('File downloaded. Appending to master has been manually disabled for demo purposes.')
 
 # hide_menu_style = """
@@ -406,7 +408,7 @@ hide_menu_style = """
         .st-af {font-size: 0.8rem;}
         p {font-size: 0.9rem;}
         footer {visibility: hidden;}
-        footer:after {content:'Developed with <3 by Ansh Sharma'; visibility: visible; display: block; position: relative; padding: 5px; top: 2px;}
+        footer:after {content:'Developed with <3 at GWD Collective LLP.'; visibility: visible; display: block; position: relative; padding: 5px; top: 2px;}
         th {text-align:left;}
         </style>
         """
